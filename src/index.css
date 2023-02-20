@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand: theme('colors.indigo.600');
+}
+
+html[data-color='yellow'] {
+  --brand: theme('colors.yellow.500');
+}
+
+html[data-color='green'] {
+  --brand: theme('colors.green.500');
+}
+
+html[data-color='violet'] {
+  --brand: theme('colors.violet.600');
+}
+
+html[data-color='fuchsia'] {
+  --brand: theme('colors.fuchsia.500');
+}
+
+html[data-color='pink'] {
+  --brand: theme('colors.pink.600');
+}
+
+@layer components {
+  .btn {
+    @apply w-full px-10 py-4 text-base font-medium text-center transition duration-500 ease-in-out transform rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply text-white bg-brand hover:bg-slate-900 focus:ring-gray-200 focus:ring-offset-gray-200 dark:focus:ring-gray-700 dark:focus:ring-offset-gray-700;
+  }
+
+  .btn-secondary {
+    @apply bg-white dark:bg-slate-900 text-gray-900 dark:text-white dark:border-gray-600 dark:hover:bg-slate-800 border border-gray-200 hover:bg-gray-100 focus:ring-gray-200 focus:ring-offset-gray-200 dark:focus:ring-gray-700 dark:focus:ring-offset-gray-700;
+  }
+
+  .theme-color {
+    @apply rounded-full h-5 w-5 cursor-pointer;
+  }
+  
+  .theme-color.active {
+    @apply ring-4 ring-gray-200 dark:ring-gray-800;
+  }
+
+  .chip {
+    @apply text-gray-100 bg-gray-300 dark:bg-slate-900 text-sm font-medium mr-2 px-4 py-1 rounded cursor-pointer;
+  }
+  
+  .chip.active {
+    @apply bg-brand text-white;
+  }
+}
