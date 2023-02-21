@@ -28,11 +28,11 @@ html[data-color='pink'] {
 
 @layer components {
   .btn {
-    @apply w-full px-10 py-4 text-base font-medium text-center transition duration-500 ease-in-out transform rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2;
+    @apply w-full px-10 py-4 text-base font-medium text-center transition duration-500 ease-in-out transform rounded-xl focus:outline-none focus:ring-4;
   }
 
   .btn-primary {
-    @apply text-white bg-brand hover:bg-slate-900 focus:ring-gray-200 focus:ring-offset-gray-200 dark:focus:ring-gray-700 dark:focus:ring-offset-gray-700;
+    @apply text-white bg-brand hover:bg-slate-900 focus:ring-gray-200 dark:focus:ring-gray-700;
   }
 
   .btn-secondary {

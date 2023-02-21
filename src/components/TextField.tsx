@@ -30,7 +30,7 @@ function TextField({
           onBlur={onBlur}
           type="text"
           placeholder="0.00"
-          className="block w-full pr-5 pl-7 py-3 text-base placeholder-gray-300 transition duration-500 ease-in-out transform border border-transparent rounded-lg text-neutral-600 dark:text-white bg-gray-50 dark:bg-slate-900 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-offset-2 focus:ring-gray-200 dark:focus:ring-gray-700 focus:ring-offset-gray-200 dark:focus:ring-offset-gray-700"
+          className="block w-full pr-5 pl-7 py-3 text-base placeholder-gray-300 transition duration-500 ease-in-out transform border border-transparent rounded-lg text-neutral-600 dark:text-white bg-gray-50 dark:bg-slate-900 focus:outline-none focus:border-transparent focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700"
         />
         {!currency && (
           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center py-0 pl-2 pr-3">
